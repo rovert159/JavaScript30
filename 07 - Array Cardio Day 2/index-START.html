@@ -58,6 +58,10 @@
     // Find the comment with this ID
     // delete the comment with the ID of 823423
 
+    let tempComment = comments.findIndex(element => element.id == 823423);
+    comments.splice(tempComment, 1); // uses index to remove item from array
+    console.log(comments) // Display new array
+
   </script>
 </body>
 </html>
